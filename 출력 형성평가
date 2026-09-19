@@ -1,0 +1,56 @@
+1. 
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        System.out.print("My name is Hong");
+    }
+}
+
+2.
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        System.out.print("My hometown \n");
+        System.out.print("Flowering mountain");
+    }
+}
+
+3.
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        System.out.print("TTTTTTTTTT \n");
+        System.out.print("TTTTTTTTTT \n");
+        System.out.printf("%6s \n", "TT");
+        System.out.printf("%6s \n", "TT");
+        System.out.printf("%6s", "TT");
+    }
+}
+
+4.
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        System.out.printf("%s %d \n", "kor", 90);
+        System.out.printf("%s %d \n", "mat", 80);
+        System.out.printf("%s %d \n", "eng", 100);
+        System.out.printf("%s %d", "sum", 90 + 80 + 100);
+    }
+}
+
+5.
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        System.out.printf("%15s %14s %14s \n", "Seoul", "10,312,545", "+91,375");
+        System.out.printf("%15s %14s %14s \n", "Pusan", "3,567,910", "+5,868");
+        System.out.printf("%15s %14s %14s \n", "Incheon", "2,758,296", "+64,888");
+        System.out.printf("%15s %14s %14s \n", "Daegu", "2,511,676", "+17,230");
+        System.out.printf("%15s %14s %14s", "Gwangju", "1,454,636", "+29,774");
+    }
+}
