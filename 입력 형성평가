@@ -1,0 +1,66 @@
+1.
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a = 10, b = 20, c = 30;
+
+        System.out.printf("%d + %d = %d", a, b, c);
+    }
+}
+
+2.
+public class Main
+{
+    public static void main(String[] args)
+    {
+        double a = 80.5, b = 22.34;
+
+        System.out.printf("%10.2f %9.2f %9.2f", a, b, a + b);
+    }
+}
+
+3.
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int a = 50;
+        double b = 100.12;
+
+        System.out.printf("%.2f * %d = %.0f", b, a, b * a);
+    }
+}
+
+4.
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = s.nextInt();
+
+        System.out.printf("sum = %d", a + b + c);
+    }
+}
+
+5.
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("yard? ");
+        double yard = s.nextDouble();
+
+        System.out.printf("%.1fyard = %.1fcm", yard, yard * 91.44);
+    }
+}
