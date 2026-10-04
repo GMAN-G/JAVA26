@@ -1,0 +1,126 @@
+1.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+        
+        if (a > b) {
+            System.out.print(a - b);
+        }
+        
+        else {
+            System.out.print(b - a);
+        }
+
+        s.close();
+    }
+}
+
+2.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        
+        if (a == 0) {
+            System.out.print("zero");
+        }
+        
+        else if (a > 0) {
+            System.out.print("plus");
+        }
+
+        else {
+            System.out.print("minus");
+        }
+
+        s.close();
+    }
+}
+
+3.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        
+        if (a % 4 == 0 && a % 100 != 0) {
+            System.out.print("leap year");
+        }
+        
+        else if (a % 400 == 0) {
+            System.out.print("leap year");
+        }
+        
+        else {
+            System.out.print("common year");
+        }
+
+        s.close();
+    }
+}
+
+4.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Number? ");
+        int a = s.nextInt();
+
+        if (a == 1) {
+            System.out.print("dog");
+        }
+        
+        else if (a == 2) {
+            System.out.print("cat");
+        }
+        
+        else if (a == 3) {
+            System.out.print("chick");
+        }
+
+        else {
+            System.out.print("I don't know.");
+        }
+
+        s.close();
+    }
+}
+
+5.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+
+        if (a == 1 || a == 3 || a == 5 || a == 7 || a == 8 || a == 10 || a == 12) {
+            System.out.print("31");
+        }
+
+        else if (a == 4 || a == 6 || a == 9 || a == 11) {
+            System.out.print("30");
+        }
+
+        else {
+            System.out.print("28");
+        }
+
+        s.close();
+    }
+}
