@@ -1,0 +1,238 @@
+1.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        int n = s.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("JUNGOL");
+        }
+
+        s.close();
+    }
+}
+
+2.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+        
+        int min = a < b ? a : b;
+        int max = a > b ? a : b;
+        
+        for (int i = min; i <= max; i++) {
+            System.out.print(i + " ");
+        }
+        
+        s.close();
+    }
+}
+
+3.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int n = s.nextInt();
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 5 == 0) {
+                sum += i;
+            }
+        }
+
+        System.out.println(sum);
+        
+        s.close();
+    }
+}
+
+4.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int n = s.nextInt();
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            sum += s.nextInt();
+        }
+
+        double average = (double) sum / n;
+
+        System.out.printf("%.2f\n", average);
+        
+        s.close();
+    }
+}
+
+5.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int evenCount = 0;
+        int oddCount = 0;
+
+        for (int i = 0; i < 10; i++) {
+            int num = s.nextInt();
+            if (num % 2 == 0) {
+                evenCount++;
+            } 
+            else {
+                oddCount++;
+            }
+        }
+
+        System.out.println("even : " + evenCount);
+        System.out.println("odd : " + oddCount);
+
+        s.close();
+    }
+}
+
+6.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+        
+        int min;
+        int max;
+        if (a < b) {
+            min = a;
+            max = b;
+        } 
+        else {
+            min = b;
+            max = a;
+        }
+
+        int sum = 0;
+        int count = 0;
+        for (int i = min; i <= max; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                sum += i;
+                count++;
+            }
+        }
+
+        double average = 0.0;
+        if (count > 0) {
+            average = (double) sum / count;
+        }
+
+        System.out.println("sum : " + sum);
+        System.out.printf("avg : %.1f\n", average);
+
+        s.close();
+    }
+}
+
+7.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int n = s.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.print((n * i) + " ");
+        }
+
+        s.close();
+    }
+}
+
+8.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+
+        for (int i = 1; i <= a; i++) {
+            for (int j = 1; j <= b; j++) {
+                System.out.print((i * j) + " ");
+            }
+            System.out.println();
+        }
+
+        s.close();
+    }
+}
+
+9.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+
+        for (int i = 1; i <= a; i++) {
+            for (int j = 1; j <= a; j++) {
+                System.out.print("(" + i + ", " + j + ") ");
+            }
+            System.out.println();
+        }
+
+        s.close();
+    }
+}
+
+10.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int a = s.nextInt();
+        int b = s.nextInt();
+
+        if (a <= b) {
+            for (int i = 1; i <= 9; i++) {
+                for (int j = a; j <= b; j++) {
+                    System.out.printf("%d * %d = %2d   ", j, i, j * i);
+                }
+                System.out.println();
+            }
+        } 
+        else {
+            for (int i = 1; i <= 9; i++) {
+                for (int j = a; j >= b; j--) {
+                    System.out.printf("%d * %d = %2d   ", j, i, j * i);
+                }
+                System.out.println();
+            }
+        }
+
+        s.close();
+    }
+}
