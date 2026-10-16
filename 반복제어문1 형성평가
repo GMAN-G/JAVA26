@@ -1,0 +1,107 @@
+1.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        int a = 1;
+        int b = s.nextInt();
+
+        while (a <= b) {
+            System.out.print(a + " ");
+            a++;
+        }
+
+
+        s.close();
+    }
+}
+
+2.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        int odd = 0;
+        int even = 0;
+
+        while (true) {
+            int num = s.nextInt();
+            if (num == 0) {
+                break;
+            }
+            if (num % 2 == 0) {
+                even++;
+            } 
+            else {
+                odd++;
+            }
+        }
+
+        System.out.println("odd : " + odd);
+        System.out.println("even : " + even);
+
+        s.close();
+    }
+}
+
+3.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int sum = 0;
+        int count = 0;
+
+        while (true) {
+            int num = s.nextInt();
+            
+            if (num < 0 || num > 100) {
+                break;
+            }
+            sum += num;
+            count++;
+        }
+
+        double average = count == 0 ? 0.0 : (double) sum / count;
+
+        System.out.println("sum : " + sum);
+        System.out.printf("avg : %.1f\n", average);
+
+        s.close();
+    }
+}
+
+4.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int count = 0;
+
+        while (true) {
+            int num = s.nextInt();
+
+            if (num == 0) {
+                break;
+            }
+
+            if (num % 3 != 0 && num % 5 != 0) {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+        
+        s.close();
+    }
+}
