@@ -1,0 +1,284 @@
+1.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        char[] a = new char[10];
+
+        for (int b = 0; b < 10; b++) {
+            a[b] = s.next().charAt(0);
+        }
+
+        for (int b = 9; b >= 0; b--) {
+            System.out.print(a[b] + " ");
+        }
+
+        s.close();
+    }
+}
+
+2.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int[] a = new int[5];
+
+        for (int b = 0; b < 5; b++) {
+            a[b] = s.nextInt();
+        }
+
+        int c = a[0] + a[2] + a[4];
+
+        System.out.print(c);
+
+        s.close();
+    }
+}
+
+3.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int[] a = new int[10];
+        int c = 0; 
+        int d = 0;
+
+
+        for (int b = 0; b < 10; b++) {
+            a[b] = s.nextInt();
+        }
+
+        for (int b = 0; b < 10; b++) {
+            if (b % 2 == 0) {
+                c = c + a[b];
+            }
+        }
+
+        for (int b = 0; b < 10; b++) {
+            if (b % 2 == 1) {
+                d = d + a[b];
+            }
+        }
+
+        System.out.printf("odd : %d\neven : %d", c, d);
+
+        s.close();
+    }
+}
+
+4.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int[] a = new int[100];
+        int c = 0;
+
+        while (true) {
+            int b = s.nextInt();
+
+            if (b == -1) {
+                break;
+            }
+
+            a[c] = b;
+            c++;
+        }
+
+        if (c >= 3) {
+            System.out.print(a[c - 3] + " " + a[c - 2] + " " + a[c - 1]);
+        }
+
+        else {
+            for (int d = 0; d < c; d++) {
+                System.out.print(a[d] + " ");
+            }
+        }
+
+        s.close();
+    }
+}
+
+5.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        double[] a = new double[6];
+        double c = 0;
+
+        for (int b = 0; b < 6; b++) {
+            a[b] = s.nextDouble();
+            c = c + a[b];
+        }
+
+        System.out.printf("%.1f", c / 6);
+
+        s.close();
+    }
+}
+
+6.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        char[] a = {'J', 'U', 'N', 'G', 'O', 'L'};
+
+        while (true) {
+            char b = s.next().charAt(0);
+
+            if (b == 'J') {
+                System.out.print("0");
+                break;
+            }
+            else if (b == 'U') {
+                System.out.print("1");
+                break;
+            }
+            else if (b == 'N') {
+                System.out.print("2");
+                break;
+            }
+            else if (b == 'G') {
+                System.out.print("3");
+                break;
+            }
+            else if (b == 'O') {
+                System.out.print("4");
+                break;
+            }
+            else if (b == 'L') {
+                System.out.print("5");
+                break;
+            }
+            else {
+                System.out.print("none");
+                break;
+            }
+        }
+
+        s.close();
+    }
+}
+
+7.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int[] a = new int[100];
+        int c = 0;
+
+        while (true) {
+            int b = s.nextInt();
+            
+            if (b < 1000 && b != 999) {
+                a[c] = b;
+                c++;
+            
+            }
+            else if (b == 999) {
+                break;
+            }
+        }
+
+        int d = a[0];
+        int e = a[0];
+
+        for (int f = 1; f < c; f++) {
+            if (a[f] > d) {
+                d = a[f];
+            }
+            else if (a[f] < e) {
+                e = a[f];
+            }
+        }
+
+        System.out.printf("max : %d\nmin : %d", d, e);
+
+        s.close();
+    }
+}
+
+8.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int d = 0;
+        int e = 0;
+
+        while (true) {
+            int b = s.nextInt();
+            
+            if (b == 0) {
+                break;
+            }
+            else if (b % 5 == 0) {
+                d++;
+                e = e + b;
+            }
+            else {
+                continue;
+            }
+        }
+
+        double f = (double) e / d;
+
+        System.out.printf("Multiples of 5 : %d\nsum : %d\navg : %.1f", d, e, f);
+
+        s.close();
+    }
+}
+
+9.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        int[] a = new int[100];
+        int c = 0;
+
+        while (true) {
+            int b = s.nextInt();
+
+            if (b == 0) {
+                break;
+            }
+            else {
+                a[c] = b;
+                c++;
+            }
+        }
+
+        System.out.println(c);
+
+        for (int d = 0; d < c; d++) {
+            
+            
+            if (a[d] % 2 == 1 || a[d] % 2 == -1) { 
+                System.out.print((a[d] * 2) + " ");
+            }
+            
+            else if (a[d] % 2 == 0) { 
+                System.out.print((a[d] / 2) + " ");
+            }
+        }
+
+        s.close();
+    }
+}
